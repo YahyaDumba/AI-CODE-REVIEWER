@@ -4,7 +4,7 @@ const aiController = require("../controllers/ai.controller")
 const router = express.Router();
 
 
-router.post("/api/code-review", aiController.getReview)
+router.post("/code-review", aiController.getReview)
 
 
 module.exports = router;    
