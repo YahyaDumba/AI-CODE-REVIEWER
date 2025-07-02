@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-
+import {Link} from "react-router-dom";
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Documentation", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", to: "/" },
+  { name: "Documentation", to: "/doc" },
+  { name: "Contact", href: "/developedby" },
 ];
 
 export default function Navbar() {
